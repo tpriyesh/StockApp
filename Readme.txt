@@ -20,15 +20,3 @@ will be displayed in dashboard which user has added to its personalized list. Th
 
 On Personalized stock page user can add and delte stock to their list . Each user will have their own personalized list in stock app which they see upon login
 There is autosuggest textbox in which user will search for stock symbols, as symbol get found in the db , it will show that, if that symbol user already has then taht symbol willl not be shown. user can delte the symbols also and add it also at any time and that updated list then get visible on dashbaord also.
-
-
-Functionality Not done
-
-Currently no authentication is present for asmx web service. Any client can make call to asmx web service
-
-
-Feedback
-
-Project task is OK. But to write web service developer should be given any option of web service like asp.net web api or wcf any in .net . Its shouldn't be that it should be in asmx since its old and no body uses it now so that should be provided to develop in any .net stack. To develop complete robust authentication mechanism more time should be provided like asp.net Identity token based authentication etc.
-
-
