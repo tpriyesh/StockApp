@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="stockModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+  <EntityContainer Name="stockModelStoreContainer">
+    <EntitySet Name="user" EntityType="stockModel.Store.user" store:Type="Tables" store:Schema="dbo" store:Name="user">
+      <DefiningQuery>SELECT 
+      [user].[id] AS [id], 
+      [user].[username] AS [username], 
+      [user].[email] AS [email], 
+      [user].[password] AS [password], 
+      [user].[usercode] AS [usercode], 
+      [user].[activestatus] AS [activestatus]
+      FROM [dbo].[user] AS [user]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'stock.dbo.user' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="username" />
+      <PropertyRef Name="email" />
+      <PropertyRef Name="password" />
+      <PropertyRef Name="usercode" />
+      <PropertyRef Name="activestatus" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="username" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="email" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="password" Type="varchar" Nullable="false" MaxLength="500" />
+    <Property Name="usercode" Type="varchar" Nullable="false" MaxLength="500" />
+    <Property Name="activestatus" Type="bit" Nullable="false" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,5 @@
+E:\Stock\Stock.Web\ClassLibrary2\bin\Debug\ClassLibrary2.dll
+E:\Stock\Stock.Web\ClassLibrary2\bin\Debug\ClassLibrary2.pdb
+E:\Stock\Stock.Web\ClassLibrary2\obj\Debug\Stock.Utilities.csprojResolveAssemblyReference.cache
+E:\Stock\Stock.Web\ClassLibrary2\obj\Debug\ClassLibrary2.dll
+E:\Stock\Stock.Web\ClassLibrary2\obj\Debug\ClassLibrary2.pdb

@@ -1,0 +1,7 @@
+E:\Stock\Stock.Web\Stock.Repository\bin\Debug\Stock.Repository.dll
+E:\Stock\Stock.Web\Stock.Repository\bin\Debug\Stock.Repository.pdb
+E:\Stock\Stock.Web\Stock.Repository\bin\Debug\Stock.Dal.dll
+E:\Stock\Stock.Web\Stock.Repository\bin\Debug\Stock.Dal.pdb
+E:\Stock\Stock.Web\Stock.Repository\obj\Debug\Stock.Repository.csprojResolveAssemblyReference.cache
+E:\Stock\Stock.Web\Stock.Repository\obj\Debug\Stock.Repository.dll
+E:\Stock\Stock.Web\Stock.Repository\obj\Debug\Stock.Repository.pdb

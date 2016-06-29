@@ -1,0 +1,31 @@
+﻿
+<script type="text/javascript">
+
+    $(function () {
+
+        $("#btn").click(function () {
+
+
+            $.ajax({
+                crossDomain: true,
+                contentType: "application/json; charset=utf-8",
+                url: "http://localhost:4591/Service1.asmx/GetData",
+                data: { projectID: 1 }, // example of parameter being passed
+                dataType: "jsonp",
+                success: onDataReceived,
+                method:'post'
+            });
+
+            function onDataReceived(data) {
+                alert("Data received" +data);
+            }
+
+        });
+    });
+
+</script>
+
+
+    <div>
+<input type="button" id="btn" value="Button" />
+    </div>

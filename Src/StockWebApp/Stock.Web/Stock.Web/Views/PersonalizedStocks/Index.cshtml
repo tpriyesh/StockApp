@@ -1,0 +1,45 @@
+﻿@model Stock.Web.ViewModels.PersonalizedViewModel
+<script src="@Url.Content("~/Scripts/dataservice.js")"></script>
+<script src="@Url.Content("~/Scripts/personalizedservice.js")"></script>
+<script type="text/javascript">
+
+    $(function () {
+        personalizedService.Init();
+    });
+</script>
+
+<a class="btn btn-primary" href="/Dashboard">Go To Dashboard</a>
+
+<button type="button" id="addbtn" class="btn">Add Stocks</button>
+<div id="addstockrow" class="row">
+
+    <input type="text" id="addstock" />
+    <button type="button" id="savebtn" class="btn">Save</button>
+</div>
+@if(Model.stockSymbols.Count>0)
+{
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <td>Symbols</td>
+            <td>Action</td>
+        </tr>
+    </thead>
+    <tbody>
+        
+        @foreach (var stockSymbol in Model.stockSymbols)
+        { 
+            <tr>
+                <td>@stockSymbol</td>
+                <td>
+                    <button type="button" id="@stockSymbol" class="btn btn-danger deletebtn">Delete Stock</button></td>
+            </tr>
+
+        }
+    </tbody>
+</table>
+}
+else
+{
+<p>No Stock is present. Click add stock to create your personalized list</p>
+}

@@ -1,0 +1,6 @@
+E:\Stock\Stock.Web\Stock.Dal\bin\Debug\Stock.Dal.dll.config
+E:\Stock\Stock.Web\Stock.Dal\bin\Debug\Stock.Dal.dll
+E:\Stock\Stock.Web\Stock.Dal\bin\Debug\Stock.Dal.pdb
+E:\Stock\Stock.Web\Stock.Dal\obj\Debug\Stock.Dal.csprojResolveAssemblyReference.cache
+E:\Stock\Stock.Web\Stock.Dal\obj\Debug\Stock.Dal.dll
+E:\Stock\Stock.Web\Stock.Dal\obj\Debug\Stock.Dal.pdb

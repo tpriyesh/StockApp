@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Stock">
+  <DataContextMoniker Name="/StockDataContext" />
+  <nestedChildShapes>
+    <classShape Id="253b7925-0b54-474b-b412-5c32780599e3" absoluteBounds="1.25, 1.375, 2, 1.9631982421875">
+      <DataClassMoniker Name="/StockDataContext/user" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2d76cf61-e37f-4a4c-a3f7-59fed0128596" absoluteBounds="1.2650000000000001, 1.835, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="59c5d0a4-77af-4ca7-8493-a26305b52074" absoluteBounds="0.75, 4, 2, 1.3862939453125">
+      <DataClassMoniker Name="/StockDataContext/userstock" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3610988c-1f5a-4401-8b6f-cffa29cbd0c2" absoluteBounds="0.765, 4.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.71875 : 3.3381982421875); (2.71875 : 4)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/StockDataContext/user/user_userstock" />
+      <nodes>
+        <classShapeMoniker Id="253b7925-0b54-474b-b412-5c32780599e3" />
+        <classShapeMoniker Id="59c5d0a4-77af-4ca7-8493-a26305b52074" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="fe138a52-30be-4b32-95fe-3d668ddd7f10" absoluteBounds="0.625, 0.5, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/StockDataContext/stock" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9953c0af-6df3-4b04-b9b9-d8af61058a95" absoluteBounds="0.64, 0.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a1b3a168-857b-47af-a975-0ea2c2973f50" absoluteBounds="0.625, 2.375, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/StockDataContext/error" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0711d07f-8c15-4f13-8ce3-b25f0609ee1f" absoluteBounds="0.64, 2.835, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

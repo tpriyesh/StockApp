@@ -1,0 +1,5 @@
+E:\Service\QuoteService\QuoteService\bin\QuoteService.dll
+E:\Service\QuoteService\QuoteService\bin\QuoteService.pdb
+E:\Service\QuoteService\QuoteService\obj\Debug\QuoteService.csprojResolveAssemblyReference.cache
+E:\Service\QuoteService\QuoteService\obj\Debug\QuoteService.dll
+E:\Service\QuoteService\QuoteService\obj\Debug\QuoteService.pdb

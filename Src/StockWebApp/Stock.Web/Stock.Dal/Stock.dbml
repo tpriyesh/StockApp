@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="stock" Class="StockDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=AWAYI-PC;Initial Catalog=stock;Integrated Security=True;MultipleActiveResultSets=True;Application Name=EntityFramework" SettingsObjectName="Stock.Dal.Properties.Settings" SettingsPropertyName="stockConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.[user]" Member="users">
+    <Type Name="user">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="username" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="usercode" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="password" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="activestatus" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="email" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="user_userstock" Member="userstocks" ThisKey="id" OtherKey="user_id" Type="userstock" />
+    </Type>
+  </Table>
+  <Table Name="dbo.userstocks" Member="userstocks">
+    <Type Name="userstock">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="user_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="stockcode" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="user_userstock" Member="user" ThisKey="user_id" OtherKey="id" Type="user" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.stock" Member="stocks">
+    <Type Name="stock">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="stockcode" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.error" Member="errors">
+    <Type Name="error">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="errordatetime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="errormessage" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="errordescription" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+    </Type>
+  </Table>
+</Database>
